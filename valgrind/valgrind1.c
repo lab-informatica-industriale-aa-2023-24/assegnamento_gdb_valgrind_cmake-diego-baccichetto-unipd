@@ -10,7 +10,8 @@ void f(void)
 	/*Se alloco 10 interi in memoria vuol dire che posso accedere solo 
 		ai valori con indice da 0 a 9, se accedo all'indice 10 accedo ad un area
 		non allocata, devo allocare una cella in più per accedere a x[10]*/
-	x[10] = 0;	
+	x[10] = 0;
+	free(x);	//ricordarsi di deallocare la memoria	
 }
 
 int main(void)
