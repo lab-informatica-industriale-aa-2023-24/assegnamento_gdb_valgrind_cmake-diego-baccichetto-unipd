@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/eseguibile.dir/gdb2.c.o -o eseguibile 
