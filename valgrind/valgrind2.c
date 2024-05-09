@@ -8,11 +8,13 @@ int main()
 {
 	char *p;
 
-	p = (char *) malloc(19);
+	p = (char *) malloc(19);	//malloc per allocare inizialmente i 19 bytes
 
-	p = (char *) malloc(12);
-	free(p);
-
-	p = (char *) malloc(16);
+	p = realloc(p, 12);		/*per modificare la dimensione uso realloc()
+					passando il puntatore da riallocare e la
+					nuova dimensione di 12*/
+	
+	free(p);			//deallocare la memoria alla fine
+	
 	return 0;
 }
