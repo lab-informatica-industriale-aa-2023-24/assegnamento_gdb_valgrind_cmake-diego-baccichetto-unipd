@@ -3,8 +3,8 @@
 
 long fattoriale(int n)
 {
-	long result = 1;
-	while (n--)
+	long result = n;	//inizializzo al primo valore da moltiplicare
+	while (--n)		//prima lo decremento in modo che non moltiplichi per zero
 		result*=n;
 
  	return result;
