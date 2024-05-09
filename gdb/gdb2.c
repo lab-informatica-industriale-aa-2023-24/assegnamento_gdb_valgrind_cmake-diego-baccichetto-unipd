@@ -7,7 +7,7 @@ int main()
 {
 	int sum = 0;
 
-	for(int i = 0; i -= 1000; i++) {
+	for(int i = 1; i < 1001; i++) {		//imposto il for per ciclare da 1 ad 1000
 		sum += i;
 	}
 
