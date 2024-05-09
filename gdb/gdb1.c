@@ -13,10 +13,10 @@
 
 int main()
 {
-	int somma = 0;
-	int val;
+	double somma = 0;				//double per numeri con virgola
+	double val;					//double per numeri con virgola
 	int numeri = 0;
-	while (scanf("%d\n",&val) != EOF) {
+	while (scanf("%lf\n",&val) != EOF) {		//specificatore %lf per double
 		somma += val;
 		numeri++;
 	}
@@ -24,7 +24,7 @@ int main()
 	double media;
 	if (numeri > 0) {
 		media = somma/numeri;
-		printf("La media è %f\n", media);
+		printf("La media è %lf\n", media); 	//specificatore %lf per double
 	}
 
 	return 0;
